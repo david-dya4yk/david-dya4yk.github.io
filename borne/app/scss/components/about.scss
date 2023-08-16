@@ -1,0 +1,110 @@
+.about {
+  padding: 160px 0 240px;
+
+  @include _1000 {
+    padding: 60px 0 200px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include _1000 {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+  }
+
+  &__box {
+    max-width: 650px;
+    width: 100%;
+
+    @include _1000 {
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 45px;
+    color: $doveGray;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 60px;
+      background-color: $doveGray;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 40px;
+
+    @include _1200 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+
+    @include _500 {
+      font-size: 25px;
+    }
+  }
+
+  &__text {
+    font-size: 19px;
+    color: $tundora;
+    margin-bottom: 55px;
+
+    @include _1200 {
+      margin-bottom: 20px;
+    }
+
+    @include _500 {
+      font-size: 15px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include _700{
+      column-gap: 10px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__info {
+    color: $tundora;
+    display: grid;
+    font-size: 90px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    align-items: center;
+
+    span {
+      color: $black;
+      font-size: 18px;
+    }
+
+    @include _700 {
+      font-size: 60px;
+    }
+
+    @include _500 {
+      grid-template-columns: unset;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: minmax(max-content, auto);
+      text-align: center;
+    }
+  }
+}

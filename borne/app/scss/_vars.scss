@@ -1,0 +1,127 @@
+$black: #000000;
+$doveGray: #f6f6f6;
+$brown: #343434;
+$white: #ffffff;
+$tundora: #404040;
+$mineShaft: #252525;
+$alto: #dedede;
+$silverChalice: #adadad;
+$silver: #c8c8c8;
+$doveGray: #636363;
+$scorpion: #626161;
+$silverChalice: #aeaeae;
+$white: #fff;
+$pirateGold: #a67c00;
+$outerSpace: #262c2c;
+$alto: #d7d7d7;
+$mercury: #e4e4e4;
+$gray: #878787;
+$bounder: #797979;
+
+%calibri-400 {
+  font-family: "Calibri-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%calibri-300 {
+  font-family: "Calibri-Light", sans-serif;
+  font-weight: 300;
+}
+
+%calibri-700 {
+  font-family: "Calibri-Bold", sans-serif;
+  font-weight: 700;
+}
+
+@mixin line-clamp($count) {
+  display: -webkit-box;
+  -webkit-line-clamp: $count;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin _320 {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin _400 {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin _500 {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin _600 {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin _700 {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin _800 {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin _900 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin _1000 {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin _1200 {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin _1350 {
+  @media (max-width: 1350px) {
+    @content;
+  }
+}
+
+@mixin _1800 {
+  @media (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin _1920 {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin _hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin _landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}

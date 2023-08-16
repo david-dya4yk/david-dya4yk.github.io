@@ -1,0 +1,49 @@
+.info {
+  padding: 110px 0;
+  line-height: 1.5;
+  color: $blueDianne;
+  @extend %rubik-400;
+  
+  @include _600{
+    padding: 60px 0;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    @extend %rubik-500;
+    line-height: 1.7;
+    @include line-clamp(2);
+
+    @include _600{
+      font-size: 20px;
+    }
+    
+  }
+
+  &__list {
+    list-style-type: decimal-leading-zero;
+    padding-left: 30px;
+
+    @include _600{
+      padding-left: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    @include line-clamp(3);
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 70px;
+  }
+
+  &__inner {
+    display: grid;
+    row-gap: 60px;
+    @include _600{
+      row-gap: 40px;
+    }
+  }
+}

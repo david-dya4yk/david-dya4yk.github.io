@@ -1,0 +1,129 @@
+.services {
+  background-color: $black;
+  padding-bottom: 130px;
+
+  @include _700 {
+    padding-bottom: 60px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    counter-reset: item;
+    margin-bottom: 80px;
+
+    @include _1350 {
+      column-gap: 10px;
+    }
+
+    @include _1000 {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 40px;
+    }
+
+    @include _700 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    color: $silverChalice;
+    height: 130px;
+  }
+
+  &__item {
+    background-color: $mineShaft;
+    padding: 100px 80px 35px 70px;
+    color: $alto;
+    max-width: 423px;
+    width: 100%;
+    margin-top: -140px;
+    transition: transform 0.2s ease;
+
+    &:not(:last-child) {
+      @include _1000 {
+        margin-top: -140px;
+      }
+
+      @include _700 {
+        margin-top: 0;
+      }
+    }
+
+    @include _hover {
+      transform: translateY(-20px);
+    }
+
+    @include _1350 {
+      padding: 45px 20px 26px 52px;
+    }
+
+    @include _1000 {
+      margin-top: 0;
+      width: 315px;
+    }
+    &:first-child {
+      @include _700 {
+        margin-top: -140px;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 36px;
+    line-height: 1;
+    padding-left: 60px;
+    max-width: 240px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 25px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: counter(item, decimal-leading-zero);
+      counter-increment: item;
+      left: 0;
+      top: 0;
+    }
+
+    @include _900 {
+      font-size: 30px;
+    }
+
+    @include _600 {
+      font-size: 25px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $silverChalice;
+
+    @include _700 {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: $silver;
+    padding: 20px 0;
+    font-size: 15px;
+    @extend %calibri-700;
+    border: 1px solid $silver;
+    width: 183px;
+    margin: 0 auto;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    @include _hover {
+      background-color: $silver;
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+@@include('./components/header.html')
+<main class="main">
+  @@include('./components/breadcrumbs.html',{name: 'Product list 1', items:
+  [{name: 'Home', href: '#'},{name: 'Product Detalis 1'}]})
+  <section class="shop">
+    <h2 class="visually-hidden">dfsdf</h2>
+    <div class="container container--small">
+      <div class="shop__wrapper">
+        <div class="filter__btn">
+          <span class="visually-hidden">open shop filters</span>
+          <svg width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
+            <path
+              fill="currentColor"
+              d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+              transform="translate(-1544.72 -66)"
+            />
+          </svg>
+        </div>
+
+        <aside class="aside">
+          <div class="aside__inner">
+            <div class="filters">
+              <h3 class="aside__title">category</h3>
+              <form class="filters__form" action="#">
+                <ul class="filters__list">
+                  @@loop('./components/filters.html',[ {"name": "Chair"},
+                  {"name": "Table"}, {"name": "Lamp"}, {"name": "Watch"},
+                  {"name": "Clock"}, ])
+                </ul>
+              </form>
+            </div>
+            <div class="price">
+              <h3 class="aside__title">price</h3>
+              <div class="price__range">
+                <input class="price__slider" type="text" />
+              </div>
+              <span class="irs-from" style="left: 0"></span>
+            </div>
+            <div class="filters">
+              <h3 class="aside__title">category</h3>
+              <form class="filters__form" action="#">
+                <ul class="filters__list">
+                  @@loop('./components/filters.html',[ {"name": "RFL", "count":
+                  "10"}, {"name": "Brothers", "count": "21"}, {"name": "Regal",
+                  "count": "3"}, {"name": "Nadia", "count": "14"}, {"name":
+                  "Otobi", "count": "6"}, ])
+                </ul>
+              </form>
+            </div>
+            <div class="recent">
+              <h3 class="aside__title">recent product</h3>
+              <ul class="resent__list">
+                <li class="resent__item">
+                  <a class="recent__link" href="#">
+                    <div class="resent__inner">
+                      <div class="resent__images">
+                        <img
+                          src="images/products/resent/1.png"
+                          alt="lamp triangle"
+                        />
+                      </div>
+                      <div class="resent__content">
+                        <h4 class="resent__title">Pendant lamp</h4>
+                        <div class="rateyo"></div>
+                        <div class="resent__prise">23$</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="resent__item">
+                  <a class="recent__link" href="#">
+                    <div class="resent__inner">
+                      <div class="resent__images">
+                        <img
+                          src="images/products/resent/2.png"
+                          alt="a lamp for a bedside table"
+                        />
+                      </div>
+                      <div class="resent__content">
+                        <h4 class="resent__title">Pendant lamp</h4>
+                        <div class="rateyo"></div>
+                        <div class="resent__prise">23$</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="resent__item">
+                  <a class="recent__link" href="#">
+                    <div class="resent__inner">
+                      <div class="resent__images">
+                        <img
+                          src="images/products/resent/3.png"
+                          alt="lamp on legs"
+                        />
+                      </div>
+                      <div class="resent__content">
+                        <h4 class="resent__title">Pendant lamp</h4>
+                        <div class="rateyo"></div>
+                        <div class="resent__prise">23$</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <div class="shop__content">
+          <div class="shop__filters">
+            <button class="shop__btn shop__btn--active button__grid"></button>
+            <button class="shop__btn button__list"></button>
+          </div>
+          <ul class="shop__inner">
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item1.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item2.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item3.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item4.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item5.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item6.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item7.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item8.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item1.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item2.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item3.png", price: "$29.00"})
+            </li>
+            <li class="shop__item">
+              @@include('./components/product.html', {name: "Wooden chair",
+              image: "images/products/item4.png", price: "$29.00"})
+            </li>
+          </ul>
+          @@include('./components/pagination.html')
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include('./components/insights__bottom.html')
+</main>
+@@include('./components/footer.html')

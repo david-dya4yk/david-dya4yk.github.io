@@ -1,0 +1,319 @@
+.shop {
+  padding: 120px 0;
+
+  @include _900 {
+    padding: 60px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+  }
+  &__item {
+    max-width: 270px;
+    width: 100%;
+    &.shop__item--list {
+      max-width: 100%;
+    }
+  }
+
+  &__filters {
+    border: 1px solid $wilSand;
+    padding: 20px 20px 20px 30px;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    width: 50px;
+    height: 50px;
+
+    &--active {
+      background-color: $casper;
+    }
+  }
+}
+
+.aside {
+  margin-right: 30px;
+  max-width: 270px;
+  width: 100%;
+
+  @include _900 {
+    position: fixed;
+    transform: translateX(-200%);
+    background-color: $white;
+    z-index: 15;
+    overflow-y: scroll;
+    height: 100%;
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+    padding: 15px;
+    left: 0;
+    top: 0;
+    margin-right: 0;
+    border-radius: 10px;
+    filter: drop-shadow(15px 10px 4px $casper);
+  }
+
+  &.aside--menu {
+    transform: translateX(0px);
+  }
+
+  &__title {
+    font-size: 18px;
+    @extend %dmsans-700;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    max-width: 200px;
+    @include line-clamp(1);
+
+    &:after {
+      content: "";
+      width: 38px;
+      height: 3px;
+      position: absolute;
+      background-color: $casper;
+      top: 8px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.filters {
+  margin-bottom: 50px;
+
+  &__item {
+    @extend %rubik-400;
+    border-radius: 6px;
+    margin-bottom: 3px;
+    overflow: hidden;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &__input {
+    &:checked + .filters__checked {
+      background-color: $casper;
+      span {
+        color: $blueDianne;
+      }
+    }
+  }
+
+  &__checked {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 15px 22px 15px 15px;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s ease, background-color 0.2s ease;
+
+    span {
+      color: $nobel;
+      @include line-clamp(1);
+    }
+
+    &:hover {
+      background-color: $casper;
+      span {
+        color: $blueDianne;
+      }
+    }
+  }
+}
+
+.resent {
+  font-size: 14px;
+  @extend %rubik-400;
+  color: $mineShaft;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    transition: background-color 0.2s ease;
+    width: 100%;
+  }
+
+  &__item {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &:hover {
+      box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+    }
+  }
+
+  &__images {
+    border: 3px solid $concrete;
+    max-width: 70px;
+    max-height: 70px;
+    width: 100%;
+    padding: 2px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+}
+
+.price {
+  margin-bottom: 120px;
+  &__range {
+    position: relative;
+  }
+  &__slider {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+}
+
+.price__range {
+  span.irs {
+    &.irs--flat {
+      .irs-bar {
+        top: 25px;
+        height: 5px;
+        background-color: $casper;
+      }
+      .irs-handle {
+        cursor: pointer;
+        & > i:first-child {
+          display: block;
+          top: -3px;
+          left: 50%;
+          width: 15px;
+          height: 15px;
+          margin-left: -1px;
+          background-color: $casper;
+        }
+        &.state_hover > i:first-child,
+        &:hover > i:first-child {
+          background-color: $black;
+        }
+      }
+      span.irs {
+        .irs-line {
+          top: 25px;
+          height: 3px;
+          background-color: $jungleMind;
+          border-radius: 4px;
+        }
+        .irs-min,
+        .irs-max {
+          display: none;
+        }
+        span.irs-to {
+          right: 0;
+        }
+        span.irs-from,
+        span.irs-to {
+          visibility: visible !important;
+          @extend %rubik-400;
+          color: $blueDianne;
+          font-size: 14px;
+          line-height: 3;
+          top: 40px;
+          &::before {
+            border-top-color: transparent;
+          }
+        }
+        span.irs-single {
+          visibility: hidden !important;
+        }
+        span.irs-from,
+        span.irs-to,
+        span.irs-single {
+          color: $blueDianne;
+          background-color: transparent;
+          left: unset !important;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  max-width: 900px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    height: 50px;
+    display: flex;
+    min-width: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $casper;
+    padding: 0 19px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $casper;
+    }
+  }
+}
+
+.filter {
+  &__btn {
+    display: none;
+
+    @include _900 {
+      width: 30px;
+      height: 30px;
+      background-color: $lightApricol;
+      position: fixed;
+      right: 0;
+      color: $casper;
+      top: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+  }
+}

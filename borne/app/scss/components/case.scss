@@ -1,0 +1,230 @@
+.case {
+  padding: 65px 0;
+
+  @include _700 {
+    padding: 30px 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 35px;
+
+    @include _700 {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__box {
+    max-width: 680px;
+    @include _700 {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    max-width: 540px;
+    font-size: 90px;
+    line-height: 1;
+  }
+
+  &__text {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    p {
+      color: $tundora;
+      font-size: 21px;
+    }
+
+    @include _700 {
+      padding-top: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 90px;
+
+    @include _700 {
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    max-width: calc(50% - 30px);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: scale 0.2s ease;
+    @include _hover {
+      img {
+        transform: scale(1.25);
+      }
+      .case__wrapper {
+        opacity: 1;
+      }
+    }
+
+    &:nth-child(3) {
+      max-width: 100%;
+    }
+
+    @include _700 {
+      max-width: calc(50% - 10px);
+    }
+  }
+
+  &__image {
+    height: 450px;
+    img {
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      width: 100%;
+      height: 100%;
+    }
+
+    @include _700 {
+      height: 300px;
+    }
+
+    @include _500 {
+      height: 200px;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    width: 237px;
+    height: 92px;
+    background-color: $white;
+    padding: 20px;
+    left: 40px;
+    bottom: 40px;
+    font-size: 26px;
+    line-height: 99.6%;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+    span {
+      color: $scorpion;
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 14px;
+    }
+  }
+
+  &__filter {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-right: 40px;
+    text-transform: uppercase;
+    @extend %calibri-300;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: $tundora;
+    padding-left: 26px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    position: relative;
+
+      &::after {
+        position: absolute;
+        content: "/";
+        left: 0;
+        top: 0;
+        color: $tundora;
+    }
+
+    &:nth-child(2){
+      position: unset;
+      padding-left: 0;
+    }
+
+    &.mixitup-control-active {
+      color: $black;
+    }
+
+    @include _hover {
+      color: $black;
+      &::after{
+        color: $black;
+      }
+    }
+  }
+
+  &__icon {
+    display: inline;
+    position: relative;
+
+    &:first-child {
+      text-transform: uppercase;
+    }
+
+    &:not(:first-child)::before {
+      position: absolute;
+      transform: translateY(50%);
+      content: "/";
+      left: 0;
+      color: $tundora;
+    }
+  }
+
+  &__more {
+    background-color: $outerSpace;
+    width: 182px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 18px;
+
+    svg {
+      margin-right: 17px;
+      transition: transform 0.5s ease;
+    }
+
+    @include _hover {
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-bottom: 40px;
+    span{
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-right: 14px;
+
+     
+    }
+
+    @include _700{
+      flex-wrap: wrap;
+      justify-content: start;
+      row-gap: 10px;
+      span{
+        width: 100%;
+      }
+    }
+  }
+}

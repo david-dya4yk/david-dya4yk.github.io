@@ -1,0 +1,383 @@
+.house {
+  padding-top: 120px;
+
+  @include _1000 {
+    padding-top: 60px;
+  }
+
+  &__inner {
+    display: flex;
+    column-gap: 50px;
+    margin-bottom: 120px;
+
+    @include _1000 {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__img {
+    img {
+      max-width: 570px;
+      max-height: 675px;
+      @include _1200 {
+        max-width: 400px;
+      }
+
+      @include _1000 {
+        max-width: 300px;
+      }
+
+      @include _900 {
+        max-width: 170px;
+      }
+    }
+    @include _900 {
+      position: absolute;
+      left: 270px;
+    }
+
+    @include _600{
+      left: 240px;
+    }
+
+    @include _432{
+      left: 15px;
+      top: 353px;
+    }
+  }
+
+  &__content {
+    max-width: 550px;
+    padding: 80px 0;
+
+    @include _1200 {
+      padding: 0;
+    }
+
+    @include _900 {
+      position: relative;
+      @include _900 {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    line-height: 1.9;
+    margin-bottom: 50px;
+
+    @include _1000 {
+      margin-bottom: 20px;
+    }
+
+    @include _432{
+      margin-bottom: 200px;
+    }
+  }
+
+  &__date {
+    @extend %rubik-400;
+
+    span {
+      display: block;
+    }
+
+    @include _600{
+      line-height: 20px;
+    }
+  }
+
+  &__years {
+    @extend %rubik-700;
+    font-size: 140px;
+    line-height: 0.5;
+    color: $casper;
+    margin-right: 25px;
+
+    @include _900 {
+      font-size: 120px;
+      line-height: 80px;
+    }
+
+    @include _600{
+      font-size: 80px;
+    }
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    margin-bottom: 40px;
+
+    @include _1000 {
+      font-size: 30px;
+    }
+
+    @include _900 {
+      max-width: 220px;
+    }
+
+    @include _432{
+      max-width: 100%
+    }
+  }
+
+  &__text {
+    @extend %rubik-400;
+    line-height: 1.9;
+    margin-bottom: 55px;
+
+    @include _1000 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__border {
+    background-color: $mystic;
+    height: 2px;
+    max-width: 500px;
+    margin-bottom: 30px;
+
+    @include _1000 {
+      margin-bottom: 20px;
+    }
+
+    @include _900 {
+      max-width: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    border-right: 1px solid $mystic;
+    max-width: 200px;
+    padding: 10px 25px 15px 0;
+    @extend %dmsans-700;
+    font-size: 36px;
+    &:nth-child(2) {
+      padding: 10px 25px 15px 25px;
+    }
+    &:nth-child(3) {
+      padding: 10px 0 15px 25px;
+      border: none;
+    }
+
+    @include _600 {
+      padding: 5px 15px 5px 15px;
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    span {
+      display: block;
+      font-size: 16px;
+      color: $tundora;
+      @include _600 {
+        font-size: 14px;
+      }
+    }
+    @include _600 {
+      font-size: 20px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    @include _600{
+      margin-bottom: 10px;
+      
+    }
+  }
+}
+
+.services {
+  padding: 80px 0;
+  background-color: $lightApricol;
+
+  @include _900 {
+    padding: 40px 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include _700 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+    }
+  }
+
+  &__item {
+    max-width: 270px;
+    width: 100%;
+    @extend %dmsans-700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    margin-bottom: 15px;
+
+    @include _900 {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    @include _432 {
+      font-size: 22px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    @include line-clamp(1);
+
+    @include _900 {
+      font-size: 14px;
+    }
+  }
+}
+.team {
+  padding: 120px 0;
+
+  @include _700 {
+    padding: 60px 0;
+  }
+
+  &__inner {
+    display: flex;
+
+    @include _1200 {
+      display: inline;
+    }
+  }
+
+  &__info {
+    max-width: 400px;
+    width: 100%;
+
+    @include _1200 {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    @include line-clamp(1);
+  }
+
+  &__text {
+    max-width: 300px;
+    @extend %rubik-400;
+    line-height: 1.9;
+    margin-bottom: 30px;
+
+    @include _1200 {
+      max-width: 100%;
+    }
+  }
+
+  &__link {
+    color: $white;
+    background-color: $casper;
+    max-width: 170px;
+    padding: 15px 20px;
+    font-size: 15px;
+    @extend %dmsans-700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include line-clamp(1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+
+    @include _700 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    max-width: 370px;
+    max-height: 320px;
+    width: 100%;
+    position: relative;
+
+    @include _900 {
+      max-width: 320px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: 60px;
+
+    @include _700 {
+      max-width: 370px;
+    }
+  }
+
+  &__box {
+    max-width: 325px;
+    width: 100%;
+    padding: 30px 25px 25px 25px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__name {
+    font-size: 22px;
+    @extend %dmsans-700;
+    color: $blueBayoux;
+    @include line-clamp(2);
+
+    span {
+      @extend %rubik-400;
+      padding-top: 15px;
+      color: #000;
+      display: block;
+      font-size: 16px;
+      @include line-clamp(1);
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 7px;
+  }
+
+  &__social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $wilSand;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

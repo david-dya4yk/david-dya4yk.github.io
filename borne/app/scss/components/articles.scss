@@ -1,0 +1,264 @@
+.person {
+  &__img {
+    width: 425px;
+    max-width: 100%;
+    height: 475px;
+    margin-bottom: 38px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    @include _1350{
+      height: 375px;
+    }
+
+    @include _900{
+      height: 275px;
+      margin-bottom: 20px;
+    }
+
+    @include _500{
+      height: 175px;
+    }
+  }
+
+  &__name {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 15px;
+
+    @include _700{
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 1;
+    color: $doveGray;
+    text-transform: uppercase;
+  }
+}
+
+.post {
+  &__image {
+    max-width: 872px;
+    height: 529px;
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__list {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 4px;
+      background-color: $tundora;
+      left: 25px;
+      top: 9px;
+    }
+
+    a {
+      color: $tundora;
+      padding-left: 15px;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 2px;
+          height: 9px;
+          background-color: $tundora;
+          top: 4px;
+          right: -20px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 29px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 12px;
+    line-height: 15px;
+    color: $tundora;
+    padding-right: 30px;
+    margin-bottom: 100px;
+    display: inline-block;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      background-image: url("../../images/icons/rmarrow.svg");
+      width: 20px;
+      height: 10px;
+      right: 0;
+      top: 0;
+    }
+
+    &::after {
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: $black;
+      transition: width 0.2s ease;
+    }
+
+    @include _hover {
+      color: $black;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 19px;
+    color: $tundora;
+    margin-bottom: 35px;
+    line-height: 1.2;
+  }
+}
+
+.blockquote {
+  display: none;
+  padding: 69px 88px 69px 188px;
+  background-color: $mineShaft;
+  color: $white;
+  position: relative;
+  margin-bottom: 100px;
+
+  @include _600{
+    padding: 20px 20px 20px 100px;
+    margin-bottom: 50px;
+
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../images/icons/blockquote.svg");
+    width: 67px;
+    height: 54px;
+    top: 70px;
+    left: 80px;
+
+    @include _600{
+      left: 20px;
+      top: 20px;
+    }
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &__text {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  &__cite {
+    font-size: 12px;
+    color: $alto;
+    font-style: normal;
+  }
+}
+
+.page {
+  &__pagination {
+    background-color: $mineShaft;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 101px;
+    padding: 0 48px;
+    position: relative;
+
+    &--entry{
+      margin-bottom: 120px;
+
+      @include _600{
+        margin-bottom: 50px;
+      }
+    }
+    
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../images/icons/pagination.svg");
+      width: 16px;
+      height: 16px;
+      left: 50%;
+      right: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    @include _500{
+      padding: 0 15px;
+    }
+  }
+
+  &__arrow {
+    color: $white;
+    width: 138px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: $white;
+      transition: width 0.2s ease;
+    }
+
+    @include _hover {
+      color: $white;
+      &::before {
+        width: 100%;
+      }
+    }
+
+    @include _500{
+      width: 115px;
+    }
+  }
+}

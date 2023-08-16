@@ -1,0 +1,100 @@
+@@include('./components/header.html')
+<main class="main">
+  @@include('./components/breadcrumbs.html',{name: 'Blog', items: [{name: 'Home', href: '#'},{name: 'Blog'}]}) 
+  <section class="blog">
+    <div class="container container--small">
+      <div class="blog__inner">
+        <div class="blog__content">
+          <ul class="blog__list">
+            <li class="blog__item">
+              @@include('./components/interior.html', { 
+                img: "images/inights/item-1.jpg", 
+                title: "Fonsectetur adipisicing eiusmod " })
+            </li>
+            <li class="blog__item">
+              @@include('./components/interior.html', { 
+                img: "images/inights/item-2.jpg", 
+                title: "Fonsectetur adipisicing elit," })
+            </li>
+            <li class="blog__item">
+              @@include('./components/interior.html', { 
+                img: "images/inights/item-3.jpg", 
+                title: "Fsectetur adipisicing tempor incididunt " })
+            </li>
+            <li class="blog__item">
+              @@include('./components/interior.html', { 
+                img: "images/inights/item-4.jpg", 
+                title: "Vonsectetur adipisicing elit"
+              })
+            </li>
+          </ul>
+          @@include('./components/pagination.html')
+        </div>
+        <div class="filter__btn">
+          <span class="visually-hidden">open shop filters</span>
+          <svg width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
+            <path
+              fill="currentColor"
+              d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+              transform="translate(-1544.72 -66)"
+            />
+          </svg>
+        </div>
+        <aside class="aside">
+          <div class="search">
+            <form class="search__form" action="#">
+              <input class="search__input" type="text" />
+              <button class="search__btn" type="submit">
+                <svg width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
+                  <path
+                    fill="curentColor"
+                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                    transform="translate(-1544.72 -66)"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="filters">
+            <h3 class="aside__title">category</h3>
+            <form class="filters__form" action="#">
+              <ul class="filters__list">
+                @@loop('./components/filters.html',[ {"name": "Chair"}, {"name":
+                "Table"}, {"name": "Lamp"}, {"name": "Watch"}, {"name":
+                "Clock"}, ])
+              </ul>
+            </form>
+          </div>
+          <div class="posts">
+            <h3 class="aside__title">Recent Posts</h3>
+            <ul class="posts__inner">
+              <li class="posts__item">
+                @@include('./components/posts-aside.html', { 
+                  href: "#", 
+                  src: "images/inights/small/1.jpg", text: " Corem ipsum dolor tetur adipisicing elit"})
+              </li>
+              <li class="posts__item">
+                @@include('./components/posts-aside.html', { 
+                  href: "#", 
+                  src: "images/inights/small/2.jpg", text: " Corem ipsum dolor tetur adipisicing elit"})
+              </li>
+              <li class="posts__item">
+                @@include('./components/posts-aside.html', { 
+                  href: "#", 
+                  src: "images/inights/small/3.jpg", text: " Corem ipsum dolor tetur adipisicing elit"})
+              </li>
+              <li class="posts__item">
+                @@include('./components/posts-aside.html', { 
+                  href: "#", 
+                  src: "images/inights/small/4.jpg", text: " Corem ipsum dolor tetur adipisicing elit"})
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  @@include('./components/insights__bottom.html')
+</main>
+@@include('./components/footer.html')

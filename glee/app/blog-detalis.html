@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__inner">
+          <a class="header__logo" href="#"
+            ><img src="images/logo.png" alt="логотип сайта" />
+          </a>
+          <ul class="header__menu">
+            <li class="header__list">
+              <a class="header__link header__link--plus" href="/">Home</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="about.html">About</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="blog-detalis.html">Services</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link header__link--plus" href="shop.html">Pages</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="terms.html">News</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="contact.html#">Contact</a>
+            </li>
+          </ul>
+          <div class="header__options">
+            <button class="header__icon header__icon--search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15.28"
+                height="15.281"
+                viewBox="0 0 15.28 15.281"
+              >
+                <path
+                  id="icon"
+                  d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                  transform="translate(-1544.72 -66)"
+                />
+              </svg>
+            </button>
+            <button class="header__icon header__icon--heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17.87"
+                height="15.531"
+                viewBox="0 0 17.87 15.531"
+              >
+                <path
+                  d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                  transform="translate(-1639.97 -70.719)"
+                />
+              </svg>
+              <span>7</span>
+            </button>
+            <button class="header__icon header__icon--cart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18.94"
+                height="16.969"
+                viewBox="0 0 18.94 16.969"
+              >
+                <path
+                  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                  transform="translate(-1716 -69)"
+                />
+              </svg>
+              <span>7</span>
+            </button>
+            <button class="header__icon header__icon--burger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20.03"
+                height="20.031"
+                viewBox="0 0 20.03 20.031"
+              >
+                <path
+                  d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
+                  transform="translate(-1811 -63.594)"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
+
+<main class="main">
+  <section class="breadcrumbs">
+  <div class="container">
+    <h2 class="breadcrumbs__title">Blog Detalis</h2>
+    <ul class="breadcrumbs__list">
+      
+ <li class="breadcrumbs__item">
+  
+  <a class="breadcrumbs__link" href="#">Home</a>
+
+   
+</li>
+
+ <li class="breadcrumbs__item">
+  
+  <a class="breadcrumbs__link" href="#">Blog</a>
+
+   
+</li>
+
+ <li class="breadcrumbs__item">
+   
+  <span class="breadcrumbs__link">Blog Detalis</span>
+
+  
+</li>
+
+    </ul>
+  </div>
+</section>
+
+  <section class="blog">
+    <div class="container container--small">
+      <div class="blog__inner">
+        <div class="blog__content">
+          <div class="blog__item">
+            <a class="interior__img" href="#">
+              <img src="images/inights/item-1.jpg" alt="black living room" />
+            </a>
+            <div class="interior__box">
+              <time class="interior__date" datetime="2020-06-28"
+                >28 JANUARY, 2020</time
+              >
+              <div class="interior__user">by admin</div>
+            </div>
+          </div>
+          <h4 class="interior__title">Fonsectetur adipisicing eiusmod</h4>
+          <p>
+            Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim venia Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit,
+          </p>
+          <p>
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <blockquote>
+            Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris
+            <cite>Wiusmod tempor</cite>
+          </blockquote>
+          <a class="test" href="#">
+            <div class="left">
+              <img src="images/inights/item-4.jpg" alt="living room" />
+            </div>
+            <div>
+              <h5>Riusmod tempor incididunt</h5>
+              <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+              </p>
+            </div>
+          </a>
+          <h5>Kajtsal jervcm eoaspckred</h5>
+          <p>
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          </p>
+          <div class="blog__wraper">
+            <div class="blog__author">
+              <div class="blog__images">
+                <img src="images/team/3.jpg" alt="man designer" />
+              </div>
+              <div class="blog__name">
+                Mark N. Hernandez<span>Designer</span>
+              </div>
+            </div>
+            <div class="blog__info">
+              <ul class="blog__tags">
+                Tags:
+                <li class="blog__tag">
+                  <a href="#">All</a>
+                </li>
+                <li class="blog__tag">
+                  <a href="#">Trending</a>
+                </li>
+              </ul>
+              <div class="blog__share">
+                Share:
+                <ul class="blog__socials">
+                  <li class="blog__icon">
+                    <a href="#">
+                      <span class="visually-hidden">instagram</span>
+                      <svg
+                        width="17.19"
+                        height="17.19"
+                        viewBox="0 0 17.19 17.19"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M1004.59,1961.94a4.322,4.322,0,0,1-3.43-3.75c-0.23-1.45-.25-8.19.17-9.65a4.387,4.387,0,0,1,3.75-3.35,34.173,34.173,0,0,1,4.31-.19c1.6,0,3.22.04,4.19,0.1a4.724,4.724,0,0,1,3.14,1.28,4.517,4.517,0,0,1,1.38,2.94c0.12,1.35.21,7.74-.19,9.24a4.411,4.411,0,0,1-3.8,3.44,42.333,42.333,0,0,1-4.74.19A29.143,29.143,0,0,1,1004.59,1961.94Zm0.92-15.26a2.958,2.958,0,0,0-2.75,2.59,57.587,57.587,0,0,0-.06,8.69,2.8,2.8,0,0,0,2.12,2.43,27.569,27.569,0,0,0,4.63.25c1.8,0,3.57-.06,4.24-0.13a2.941,2.941,0,0,0,2.75-2.6,61.315,61.315,0,0,0,.11-8.45,2.9,2.9,0,0,0-2.58-2.74,40.212,40.212,0,0,0-4.3-.16C1007.96,1946.56,1006.26,1946.6,1005.51,1946.68Zm-0.32,6.92a4.445,4.445,0,0,1,4.45-4.41,4.37,4.37,0,0,1,4.37,4.41,4.458,4.458,0,0,1-4.45,4.41A4.37,4.37,0,0,1,1005.19,1953.6Zm1.55-.03a2.834,2.834,0,0,0,2.81,2.88h0.02a2.882,2.882,0,0,0,2.88-2.82,2.82,2.82,0,0,0-2.8-2.88h-0.03A2.881,2.881,0,0,0,1006.74,1953.57Zm6.45-4.55a1.029,1.029,0,0,1,1.03-1.03h0.01a1.016,1.016,0,0,1,1.02,1.04,1.035,1.035,0,0,1-1.04,1.02A1.014,1.014,0,0,1,1013.19,1949.02Z"
+                          transform="translate(-1001 -1945)"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="blog__icon">
+                    <a href="#">
+                      <span class="visually-hidden">instagram</span>
+                      <svg
+                        width="17.19"
+                        height="17.19"
+                        viewBox="0 0 17.19 17.19"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M1004.59,1961.94a4.322,4.322,0,0,1-3.43-3.75c-0.23-1.45-.25-8.19.17-9.65a4.387,4.387,0,0,1,3.75-3.35,34.173,34.173,0,0,1,4.31-.19c1.6,0,3.22.04,4.19,0.1a4.724,4.724,0,0,1,3.14,1.28,4.517,4.517,0,0,1,1.38,2.94c0.12,1.35.21,7.74-.19,9.24a4.411,4.411,0,0,1-3.8,3.44,42.333,42.333,0,0,1-4.74.19A29.143,29.143,0,0,1,1004.59,1961.94Zm0.92-15.26a2.958,2.958,0,0,0-2.75,2.59,57.587,57.587,0,0,0-.06,8.69,2.8,2.8,0,0,0,2.12,2.43,27.569,27.569,0,0,0,4.63.25c1.8,0,3.57-.06,4.24-0.13a2.941,2.941,0,0,0,2.75-2.6,61.315,61.315,0,0,0,.11-8.45,2.9,2.9,0,0,0-2.58-2.74,40.212,40.212,0,0,0-4.3-.16C1007.96,1946.56,1006.26,1946.6,1005.51,1946.68Zm-0.32,6.92a4.445,4.445,0,0,1,4.45-4.41,4.37,4.37,0,0,1,4.37,4.41,4.458,4.458,0,0,1-4.45,4.41A4.37,4.37,0,0,1,1005.19,1953.6Zm1.55-.03a2.834,2.834,0,0,0,2.81,2.88h0.02a2.882,2.882,0,0,0,2.88-2.82,2.82,2.82,0,0,0-2.8-2.88h-0.03A2.881,2.881,0,0,0,1006.74,1953.57Zm6.45-4.55a1.029,1.029,0,0,1,1.03-1.03h0.01a1.016,1.016,0,0,1,1.02,1.04,1.035,1.035,0,0,1-1.04,1.02A1.014,1.014,0,0,1,1013.19,1949.02Z"
+                          transform="translate(-1001 -1945)"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="blog__icon">
+                    <a href="#">
+                      <span class="visually-hidden">instagram</span>
+                      <svg
+                        width="17.19"
+                        height="17.19"
+                        viewBox="0 0 17.19 17.19"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M1004.59,1961.94a4.322,4.322,0,0,1-3.43-3.75c-0.23-1.45-.25-8.19.17-9.65a4.387,4.387,0,0,1,3.75-3.35,34.173,34.173,0,0,1,4.31-.19c1.6,0,3.22.04,4.19,0.1a4.724,4.724,0,0,1,3.14,1.28,4.517,4.517,0,0,1,1.38,2.94c0.12,1.35.21,7.74-.19,9.24a4.411,4.411,0,0,1-3.8,3.44,42.333,42.333,0,0,1-4.74.19A29.143,29.143,0,0,1,1004.59,1961.94Zm0.92-15.26a2.958,2.958,0,0,0-2.75,2.59,57.587,57.587,0,0,0-.06,8.69,2.8,2.8,0,0,0,2.12,2.43,27.569,27.569,0,0,0,4.63.25c1.8,0,3.57-.06,4.24-0.13a2.941,2.941,0,0,0,2.75-2.6,61.315,61.315,0,0,0,.11-8.45,2.9,2.9,0,0,0-2.58-2.74,40.212,40.212,0,0,0-4.3-.16C1007.96,1946.56,1006.26,1946.6,1005.51,1946.68Zm-0.32,6.92a4.445,4.445,0,0,1,4.45-4.41,4.37,4.37,0,0,1,4.37,4.41,4.458,4.458,0,0,1-4.45,4.41A4.37,4.37,0,0,1,1005.19,1953.6Zm1.55-.03a2.834,2.834,0,0,0,2.81,2.88h0.02a2.882,2.882,0,0,0,2.88-2.82,2.82,2.82,0,0,0-2.8-2.88h-0.03A2.881,2.881,0,0,0,1006.74,1953.57Zm6.45-4.55a1.029,1.029,0,0,1,1.03-1.03h0.01a1.016,1.016,0,0,1,1.02,1.04,1.035,1.035,0,0,1-1.04,1.02A1.014,1.014,0,0,1,1013.19,1949.02Z"
+                          transform="translate(-1001 -1945)"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="blog__icon">
+                    <a href="#">
+                      <span class="visually-hidden">instagram</span>
+                      <svg
+                        width="17.19"
+                        height="17.19"
+                        viewBox="0 0 17.19 17.19"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M1004.59,1961.94a4.322,4.322,0,0,1-3.43-3.75c-0.23-1.45-.25-8.19.17-9.65a4.387,4.387,0,0,1,3.75-3.35,34.173,34.173,0,0,1,4.31-.19c1.6,0,3.22.04,4.19,0.1a4.724,4.724,0,0,1,3.14,1.28,4.517,4.517,0,0,1,1.38,2.94c0.12,1.35.21,7.74-.19,9.24a4.411,4.411,0,0,1-3.8,3.44,42.333,42.333,0,0,1-4.74.19A29.143,29.143,0,0,1,1004.59,1961.94Zm0.92-15.26a2.958,2.958,0,0,0-2.75,2.59,57.587,57.587,0,0,0-.06,8.69,2.8,2.8,0,0,0,2.12,2.43,27.569,27.569,0,0,0,4.63.25c1.8,0,3.57-.06,4.24-0.13a2.941,2.941,0,0,0,2.75-2.6,61.315,61.315,0,0,0,.11-8.45,2.9,2.9,0,0,0-2.58-2.74,40.212,40.212,0,0,0-4.3-.16C1007.96,1946.56,1006.26,1946.6,1005.51,1946.68Zm-0.32,6.92a4.445,4.445,0,0,1,4.45-4.41,4.37,4.37,0,0,1,4.37,4.41,4.458,4.458,0,0,1-4.45,4.41A4.37,4.37,0,0,1,1005.19,1953.6Zm1.55-.03a2.834,2.834,0,0,0,2.81,2.88h0.02a2.882,2.882,0,0,0,2.88-2.82,2.82,2.82,0,0,0-2.8-2.88h-0.03A2.881,2.881,0,0,0,1006.74,1953.57Zm6.45-4.55a1.029,1.029,0,0,1,1.03-1.03h0.01a1.016,1.016,0,0,1,1.02,1.04,1.035,1.035,0,0,1-1.04,1.02A1.014,1.014,0,0,1,1013.19,1949.02Z"
+                          transform="translate(-1001 -1945)"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter__btn">
+          <span class="visually-hidden">open shop filters</span>
+          <svg width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
+            <path
+              fill="currentColor"
+              d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+              transform="translate(-1544.72 -66)"
+            />
+          </svg>
+        </div>
+        <aside class="aside">
+          <div class="search">
+            <form class="search__form" action="#">
+              <label class="search__label">
+                <input class="search__input" type="text" />
+              </label>
+              <button class="search__btn" type="submit">
+                <span class="visually-hidden">submit</span>
+                <svg width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
+                  <path
+                    fill="curentColor"
+                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                    transform="translate(-1544.72 -66)"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="filters">
+            <h3 class="aside__title">category</h3>
+            <form class="filters__form" action="#">
+              <ul class="filters__list">
+                <li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Chair 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Table 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Lamp 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Watch 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Clock 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li>
+              </ul>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section class="comment">
+    <div class="container container--small">
+      <div class="comment__inner">
+        <h2 class="comment__title">3 Comments</h2>
+
+        <ul class="comment__list">
+          <li class="comment__item">
+            <div class="comment__img">
+              <img src="images/team/1.jpg" alt="girls" />
+            </div>
+            <div class="comment__content">
+              <div class="comment__top">
+                <div class="comment__name">Delores G. Roberts</div>
+                <time class="comment__date" datetime="2020-10-11"
+                  >Add 11 Oct 2020</time
+                >
+              </div>
+              <div class="comment__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringilla massa et tristique convallis. Class aptent
+                  taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos. Suspendisse orci sem, ultrices
+                </p>
+              </div>
+              <a class="comment__link" href="#">
+                Reply
+                <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+                  <path
+                    fill="currentColor"
+                    d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+                    transform="translate(-617 -448)"
+                  />
+                </svg>
+              </a>
+             
+            </div>
+            <li class="comment__item">
+              <div class="comment__reply">
+                <div class="comment__img">
+                  <img src="images/team/2.jpg" alt="dad" />
+                </div>
+                <div class="comment__content">
+                  <div class="comment__top">
+                    <div class="comment__name">Delores G. Roberts</div>
+                    <time class="comment__date" datetime="2020-10-11"
+                      >Add 11 Oct 2020</time
+                    >
+                  </div>
+                  <div class="comment__text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas fringilla massa et tristique convallis. Class
+                      aptent taciti sociosqu ad litora torquent per conubia
+                      nostra, per inceptos himenaeos. Suspendisse orci sem,
+                      ultrices
+                    </p>
+                  </div>
+                  <a class="comment__link" href="#">
+                    Reply
+                    <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+                      <path
+                        fill="currentColor"
+                        d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+                        transform="translate(-617 -448)"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </li>
+          <li class="comment__item">
+            <div class="comment__img">
+              <img src="images/team/1.jpg" alt="girls" />
+            </div>
+            <div class="comment__content">
+              <div class="comment__top">
+                <div class="comment__name">Delores G. Roberts</div>
+                <time class="comment__date" datetime="2020-10-11"
+                  >Add 11 Oct 2020</time
+                >
+              </div>
+              <div class="comment__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringilla massa et tristique convallis. Class aptent
+                  taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos. Suspendisse orci sem, ultrices
+                </p>
+              </div>
+              <a class="comment__link" href="#">
+                Reply
+                <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+                  <path
+                    fill="currentColor"
+                    d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+                    transform="translate(-617 -448)"
+                  />
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <h3 class="comment__title">Leave A Comment</h3>
+        <form class="comment__form" action="#">
+          <div class="comment__top">
+            <label class="comment__label">
+              <input class="comment__input" type="text" placeholder="Name" />
+            </label>
+            <label class="comment__label">
+              <input class="comment__input" type="email" placeholder="Email" />
+            </label>
+          </div>
+          <label>
+            <textarea
+              class="comment__textarea"
+              placeholder="Comment">
+            </textarea>
+          </label>
+          <button class="comment__btn" type="submit">post comment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="insights insights__bottom--small">
+  <div class="container container--small">
+    <div class="insights__bottom">
+      <div class="container container--small">
+        <ul class="insights__partners">
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-1.png"
+              alt="restoran stephanie"
+            />
+          </li>
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-2.png"
+              alt="kmn consulting"
+            />
+          </li>
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-3.png"
+              alt="chainforse"
+            />
+          </li>
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-4.png"
+              alt="moon next"
+            />
+          </li>
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-5.png"
+              alt="vintage"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+    <h2 class="visually-hidden">contacts</h2>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <a href="#" class="footer__logo">
+            <img src="images/logo.png" alt="логотип" />
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              ADRESS:
+              <a class="footer__link" href="#">
+                4772 Wines Lane Houston, TX 77032
+              </a>
+            </li>
+            <li class="footer__item">
+              Telephone:
+              <a class="footer__link" href="tel:+8323475843">+832-347-5843</a>
+            </li>
+            <li class="footer__item">
+              Email:
+              <a class="footer__link" href="mailto:contact@Glee.com">
+                contact@Glee.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">services</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Return Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Our Blog</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">account</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Your Account</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Checkout</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Login</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Register </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">newsletter</h3>
+          <p class="footer__item">
+            Subscribe by our newsletter and get update protidin.
+          </p>
+          <form class="footer__form" action="#">
+            <input
+              class="footer__input"
+              type="email"
+              placeholder="Email address"
+              required
+            />
+            <button class="footer__btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>©2020 CopyRight Example. All rights reserved.</p>
+        <nav class="footer__nav">
+          <ul class="footer__list footer__list--divider">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
+

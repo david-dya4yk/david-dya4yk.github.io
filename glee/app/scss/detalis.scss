@@ -1,0 +1,333 @@
+.detalis {
+  padding: 120px 0;
+
+  @include _700{
+    padding: 60px 0;
+  }
+  &__wrapper {
+    display: flex;
+    margin-bottom: 80px;
+
+    @include _1000 {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    @include _700{
+      margin-bottom: 30px;
+    }
+  }
+
+  &__items {
+    margin-right: 25px;
+    width: 138px;
+    height: 530px;
+    overflow: hidden;
+
+    @include _500{
+      display: none;
+    }
+  }
+
+  &__inner {
+    width: 136px;
+    height: 160px;
+    border: 2px solid $concrete;
+    margin-bottom: 22px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__one {
+    height: 410px;
+    width: 250px;
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: 100%;
+    }
+    
+    @include _500{
+      height: 250px;
+    }
+  }
+
+  &__box {
+    border: 2px solid $concrete;
+    width: 387px;
+    padding: 60px 70px;
+    height: 530px;
+    margin-right: 30px;
+
+    @include _600{
+      width: 255px;
+      padding: 60px 1px;
+      margin: 0;
+
+    }
+
+       
+    @include _500{
+      padding: 25px 1px;
+      height: 307px;
+
+  }
+  }
+
+  &__content {
+    padding: 30px 10px 30px 0;
+
+    @include _1000 {
+      width: 70%;
+    }
+
+    @include _700 {
+      width: 100%;
+      padding: 0;
+    }
+
+  }
+
+  &__title {
+    font-size: 40px;
+    @extend %rubik-400;
+    color: $mineShaft;
+    @include line-clamp(1);
+
+    @include _500{
+      font-size: 30px;
+    }
+  }
+
+  &__star {
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    font-size: 30px;
+    color: $mineShaft;
+    @extend %rubik-400;
+    margin-bottom: 30px;
+    @include line-clamp(1);
+
+    @include _600{
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    max-width: 530px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+
+    @include _1000 {
+      max-width: 100%;
+    }
+  }
+
+  &__btn {
+    padding: 18px 50px;
+    background-color: $casper;
+    border: none;
+    border-radius: 6px;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 15px;
+    @extend %rubik-400;
+    margin-bottom: 55px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: $lightApricol;
+    }
+  }
+
+  &__info {
+    @extend %rubik-400;
+    line-height: 1.8;
+    span {
+      @include line-clamp(1);
+
+      display: block;
+    }
+
+    @include _1000 {
+      display: flex;
+      max-width: 500px;
+      justify-content: space-between;
+    }
+
+    @include _700{
+      max-width: 100%;
+    }
+  }
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="number"] {
+  appearance: textfield;
+}
+
+.quantity-block {
+  font-size: 0;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 17px 12px;
+  width: 50px;
+  outline: none;
+  border: 1px solid $casper;
+  background-color: transparent;
+  max-height: 53px;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: $casper;
+    color: $white;
+  }
+}
+.quantity-num {
+  font-size: 14px;
+  width: 50px;
+  height: 52px;
+  text-align: center;
+  border: 1px solid $casper;
+}
+
+.quantity-arrow-plus {
+  border-left: none;
+}
+
+.quantity-arrow-minus {
+  border-right: none;
+}
+
+.tabs {
+  &__top {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    max-width: 240px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    @extend %rubik-500;
+    padding: 17px 12px;
+    background-color: $mystic;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    @include line-clamp(2);
+    @include _700{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      padding: 15px 5px;
+    }
+
+    &--active,
+    &:hover {
+      background-color: $casper;
+      color: $white;
+    }
+
+    &:not(:last-child) {
+      margin-right: 15px;
+      @include _700{
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__item {
+    display: none;
+    line-height: 1.8;
+    &.tabs__item--active {
+      display: block;
+    }
+  }
+}
+
+.related {
+  padding-bottom: 110px;
+
+  @include _700{
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 0;
+    @include _500{
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin: 15px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+
+    @include _432{
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__prev::before {
+    transform: rotate(180deg);
+  }
+}
+
+.slick-arrow {
+  border: 1px solid $mystic;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/icons/arrows-slider1.svg");
+    width: 22px;
+    height: 9px;
+    top: 21px;
+    left: 14px;
+  }
+
+  &:hover {
+    border-color: $casper;
+  }
+}

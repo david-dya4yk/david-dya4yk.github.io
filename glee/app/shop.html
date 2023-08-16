@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__inner">
+          <a class="header__logo" href="#"
+            ><img src="images/logo.png" alt="логотип сайта" />
+          </a>
+          <ul class="header__menu">
+            <li class="header__list">
+              <a class="header__link header__link--plus" href="/">Home</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="about.html">About</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="blog-detalis.html">Services</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link header__link--plus" href="shop.html">Pages</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="terms.html">News</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="contact.html#">Contact</a>
+            </li>
+          </ul>
+          <div class="header__options">
+            <button class="header__icon header__icon--search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15.28"
+                height="15.281"
+                viewBox="0 0 15.28 15.281"
+              >
+                <path
+                  id="icon"
+                  d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                  transform="translate(-1544.72 -66)"
+                />
+              </svg>
+            </button>
+            <button class="header__icon header__icon--heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17.87"
+                height="15.531"
+                viewBox="0 0 17.87 15.531"
+              >
+                <path
+                  d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                  transform="translate(-1639.97 -70.719)"
+                />
+              </svg>
+              <span>7</span>
+            </button>
+            <button class="header__icon header__icon--cart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18.94"
+                height="16.969"
+                viewBox="0 0 18.94 16.969"
+              >
+                <path
+                  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                  transform="translate(-1716 -69)"
+                />
+              </svg>
+              <span>7</span>
+            </button>
+            <button class="header__icon header__icon--burger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20.03"
+                height="20.031"
+                viewBox="0 0 20.03 20.031"
+              >
+                <path
+                  d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
+                  transform="translate(-1811 -63.594)"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
+
+<main class="main">
+  <section class="breadcrumbs">
+  <div class="container">
+    <h2 class="breadcrumbs__title">Product list 1</h2>
+    <ul class="breadcrumbs__list">
+      
+ <li class="breadcrumbs__item">
+  
+  <a class="breadcrumbs__link" href="#">Home</a>
+
+   
+</li>
+
+ <li class="breadcrumbs__item">
+   
+  <span class="breadcrumbs__link">Product Detalis 1</span>
+
+  
+</li>
+
+    </ul>
+  </div>
+</section>
+
+  <section class="shop">
+    <h2 class="visually-hidden">dfsdf</h2>
+    <div class="container container--small">
+      <div class="shop__wrapper">
+        <div class="filter__btn">
+          <span class="visually-hidden">open shop filters</span>
+          <svg width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
+            <path
+              fill="currentColor"
+              d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+              transform="translate(-1544.72 -66)"
+            />
+          </svg>
+        </div>
+
+        <aside class="aside">
+          <div class="aside__inner">
+            <div class="filters">
+              <h3 class="aside__title">category</h3>
+              <form class="filters__form" action="#">
+                <ul class="filters__list">
+                  <li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Chair 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Table 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Lamp 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Watch 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Clock 
+        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+          <path
+            class="cls-1"
+            d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+            transform="translate(-617 -448)"
+          />
+        </svg>
+         
+      </div>
+    </label>
+  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="price">
+              <h3 class="aside__title">price</h3>
+              <div class="price__range">
+                <input class="price__slider" type="text" />
+              </div>
+              <span class="irs-from" style="left: 0"></span>
+            </div>
+            <div class="filters">
+              <h3 class="aside__title">category</h3>
+              <form class="filters__form" action="#">
+                <ul class="filters__list">
+                  <li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        RFL  
+        <span>(10)</span>
+        
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Brothers  
+        <span>(21)</span>
+        
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Regal  
+        <span>(3)</span>
+        
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Nadia  
+        <span>(14)</span>
+        
+      </div>
+    </label>
+  </li><li class="filters__item">
+    <label class="filters__label">
+      <input class="filters__input visually-hidden" type="checkbox" />
+      <div class="filters__checked">
+        Otobi  
+        <span>(6)</span>
+        
+      </div>
+    </label>
+  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="recent">
+              <h3 class="aside__title">recent product</h3>
+              <ul class="resent__list">
+                <li class="resent__item">
+                  <a class="recent__link" href="#">
+                    <div class="resent__inner">
+                      <div class="resent__images">
+                        <img
+                          src="images/products/resent/1.png"
+                          alt="lamp triangle"
+                        />
+                      </div>
+                      <div class="resent__content">
+                        <h4 class="resent__title">Pendant lamp</h4>
+                        <div class="rateyo"></div>
+                        <div class="resent__prise">23$</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="resent__item">
+                  <a class="recent__link" href="#">
+                    <div class="resent__inner">
+                      <div class="resent__images">
+                        <img
+                          src="images/products/resent/2.png"
+                          alt="a lamp for a bedside table"
+                        />
+                      </div>
+                      <div class="resent__content">
+                        <h4 class="resent__title">Pendant lamp</h4>
+                        <div class="rateyo"></div>
+                        <div class="resent__prise">23$</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="resent__item">
+                  <a class="recent__link" href="#">
+                    <div class="resent__inner">
+                      <div class="resent__images">
+                        <img
+                          src="images/products/resent/3.png"
+                          alt="lamp on legs"
+                        />
+                      </div>
+                      <div class="resent__content">
+                        <h4 class="resent__title">Pendant lamp</h4>
+                        <div class="rateyo"></div>
+                        <div class="resent__prise">23$</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <div class="shop__content">
+          <div class="shop__filters">
+            <button class="shop__btn shop__btn--active button__grid"></button>
+            <button class="shop__btn button__list"></button>
+          </div>
+          <ul class="shop__inner">
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item1.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item2.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item3.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item4.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item5.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item6.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item7.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item8.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item1.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item2.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item3.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+            <li class="shop__item">
+              <article class="product">
+  <a class="product__img" href="#">
+    <div class="product__inner">
+      <img src="images/products/item4.png" alt="Wooden chair" />
+    </div>
+  </a>
+
+  <div class="product__content">
+    <button class="product__icon">
+      <svg width="20px" height="20px">
+        <path
+          fill="currentColor"
+          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"
+        />
+      </svg>
+    </button>
+
+    <button class="product__icon">
+      <svg width="22" height="20" viewBox="0 0 22 20">
+        <path
+          fill="currentColor"
+          d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+          transform="translate(-800 -1563)"
+        />
+      </svg>
+    </button>
+    <button class="product__icon">
+      <svg width="22px" height="18px">
+        <path
+          fill="currentColor"
+          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="product__box">
+    <h3 class="product__name">
+      <a href="#">Wooden chair</a>
+    </h3>
+    <div class="product__rateyo rateyo"></div>
+    <span class="product__subtitle">$29.00</span>
+    <div class="product__text">
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </div>
+    <a class="product__link" href="#">add to cart</a>
+  </div>
+</article>
+
+            </li>
+          </ul>
+          <div class="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <span class="pagination__link">1</span>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">2</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">3</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">Next</a>
+      </li>
+    </ul>
+  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="insights insights__bottom--small">
+  <div class="container container--small">
+    <div class="insights__bottom">
+      <div class="container container--small">
+        <ul class="insights__partners">
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-1.png"
+              alt="restoran stephanie"
+            />
+          </li>
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-2.png"
+              alt="kmn consulting"
+            />
+          </li>
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-3.png"
+              alt="chainforse"
+            />
+          </li>
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-4.png"
+              alt="moon next"
+            />
+          </li>
+          <li class="insights__logo">
+            <img
+              class="insights__img"
+              src="images/inights/partners-5.png"
+              alt="vintage"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+    <h2 class="visually-hidden">contacts</h2>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <a href="#" class="footer__logo">
+            <img src="images/logo.png" alt="логотип" />
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              ADRESS:
+              <a class="footer__link" href="#">
+                4772 Wines Lane Houston, TX 77032
+              </a>
+            </li>
+            <li class="footer__item">
+              Telephone:
+              <a class="footer__link" href="tel:+8323475843">+832-347-5843</a>
+            </li>
+            <li class="footer__item">
+              Email:
+              <a class="footer__link" href="mailto:contact@Glee.com">
+                contact@Glee.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">services</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Return Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Our Blog</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">account</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Your Account</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Checkout</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Login</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Register </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">newsletter</h3>
+          <p class="footer__item">
+            Subscribe by our newsletter and get update protidin.
+          </p>
+          <form class="footer__form" action="#">
+            <input
+              class="footer__input"
+              type="email"
+              placeholder="Email address"
+              required
+            />
+            <button class="footer__btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>©2020 CopyRight Example. All rights reserved.</p>
+        <nav class="footer__nav">
+          <ul class="footer__list footer__list--divider">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
+

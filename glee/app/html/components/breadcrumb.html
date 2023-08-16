@@ -1,0 +1,9 @@
+<li class="breadcrumbs__item">
+  @@if(context.href){
+  <a class="breadcrumbs__link" href="#">@@name</a>
+
+  } @@if(!context.href){
+  <span class="breadcrumbs__link">@@name</span>
+
+  }
+</li>

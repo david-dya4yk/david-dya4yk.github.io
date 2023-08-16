@@ -1,0 +1,156 @@
+.footer {
+  padding: 65px 0;
+  color: $tundora;
+  position: relative;
+
+  @include _600{
+    padding: 30px 0;
+  }
+
+  @include _400{
+    padding: 30px 0;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 405px 235px 120px 110px;
+    justify-content: space-between;
+    padding-left: 40px;
+
+    @include _1350{
+      grid-template-columns: 200px 235px 120px 110px;
+    }
+
+    @include _900{
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      text-align: center;
+    }
+
+    @include _500{
+      grid-template-columns: 1fr;
+      padding-left: 0;
+    }
+  }
+
+  &__subtitle {
+    font-size: 122px;
+    padding: 28px 0 9px;
+    border-top: 1px solid $silverChalice;
+    border-bottom: 1px solid $silverChalice;
+    margin-bottom: 120px;
+    text-align: center;
+
+    @include _1350 {
+      font-size: 100px;
+    }
+
+    @include _900{
+      font-size: 70px;
+    }
+
+    @include _700{
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
+
+    @include _400{
+      font-size: 30px;
+      padding: 15px 0 9px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  &__copy {
+    font-size: 18px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-bottom: 30px;
+    color: $black;
+  }
+
+  &__address {
+    font-size: 19px;
+    font-style: normal;
+  }
+
+  &__map {
+    margin-bottom: 40px;
+
+    @include _900{
+      margin-bottom: 20px;
+    }
+  }
+
+  &__tel,
+  &__mail,
+  &__map {
+    display: inline-block;
+  }
+
+  &__tel {
+    transition: color 0.2s ease;
+
+    @include _hover {
+      color: $doveGray;
+    }
+  }
+
+  &__mail {
+    @include _hover {
+      color: $doveGray;
+    }
+  }
+
+  &__graph {
+    font-size: 19px;
+  }
+
+  &__link {
+    font-size: 19px;
+    transition: color 0.2s ease;
+
+    @include _hover {
+      color: $doveGray;
+    }
+  }
+
+  &__wraper {
+    position: absolute;
+    left: -20px;
+    bottom: 110px;
+    transform: rotate(-90deg);
+  }
+
+  &__top {
+    position: relative;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: $black;
+    transition: color 0.2s ease;
+    
+    @include _hover {
+      color: $doveGray;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: -48px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 39px;
+      height: 1px;
+      background-color: $tundora;
+    }
+  }
+}
